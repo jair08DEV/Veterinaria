@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Pet Mour</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>		
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+  
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item almacenNav active">
+                  <a class="nav-link" href="#">Almacenes</a>
+              </li>
+              <li class="nav-item publicidadNav">
+                  <a class="nav-link" href="#">publicidad</a>
+              </li>
+              <li class="nav-item clientesNav">
+                  <a class="nav-link" href="#">Clientes</a>
+              </li>
+              <li class="nav-item ventasNav">
+                <a class="nav-link" href="#">ventas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpeg);"></a>
+	        <ul class="list-unstyled components mb-5">
+<!-- 	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Almacen</a>
+	            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Almacen 1</a>
+                </li>
+                <li>
+                    <a href="#">Almacen 2</a>
+                </li>
+                <li>
+                    <a href="#">Almacen 3</a>
+                </li>
+	            </ul>
+	          </li> -->
+	          <li>
+	              <a id="alcamen" href="#">Almacenes</a>
+	          </li>
+	          <li>
+	              <a id="publicidad" href="#">Publicidad</a>
+	          </li>
+	          <li>
+	              <a id="clientes" href="#">Clientes</a>
+	          </li>
+	          <li>
+              <a id="ventas" href="#">Ventas</a>
+	          </li>
+	        </ul>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4">
+        <ng-container id="Almacen">
+          <h2 class="mb-4">Almacenes</h2>
+          <table>
+            <tr>
+              <th>Nombre</th>
+              <th>Dirección</th>
+              <th>Capacidad</th> 
+              <th>Estado</th>
+            </tr>
+            <tr id="Almacen1">
+              <td>Almacen 1</td>
+              <td>Cra 26 #15 - 45</td>
+              <td>100 Cajas</td>
+              <td>Activa</td>
+            </tr>
+            <tr id="Almacen2">
+              <td>Almacen 2</td>
+              <td>Calle 120 #25 - 30</td>
+              <td>200 Cajas</td>
+              <td>Activa</td>
+            </tr>
+            <tr id="Almacen3">
+              <td>Almacen 3</td>
+              <td>Cra 82a #25 - 85</td>
+              <td>150 Cajas</td>
+              <td>Inactivo</td>
+            </tr>
+            <tr id="Almacen4">
+              <td>Almacen 4</td>
+              <td>Cra 9c este #29 - 43 sur</td>
+              <td>50 Cajas</td>
+              <td>Activa</td>
+            </tr>
+          </table>
+        </ng-container>
+        <ng-container id="Publicidad">
+          <h2>Publicidad</h2>
+          <div id="tabla-precios">
+
+            <div class="precio-col">
+             <div class="precio-col-header">
+             <h3>Comida para gatos</h3>
+             <del><p>$ 80.000</p></del>
+             <p>$ 60.000</p>
+             </div>
+            
+            <div class="precio-col-features">
+             <p>Facebook</p>
+             <p>10 Cajas</p>
+             <p>.</p>
+             </div>
+            
+            <div class="precio-col-comprar">
+             <a>Publicar</a>
+             </div>
+             </div>
+            
+            <div class="precio-col">
+             <div class="precio-col-header">
+             <h3>Servicio Paseo</h3>
+             <del><p>$ 50.000</p></del>
+             <p>$ 35.000</p>
+             </div>
+            
+            <div class="precio-col-features">
+             <p>Instagram</p>
+             <p>Debe llevar al perro a la tienda</p>
+             <p>Debe llevar factura de una compra</p>
+             </div>
+            
+            <div class="precio-col-comprar">
+             <a>Publicar</a>
+             </div>
+             </div>
+            
+            <div class="precio-col">
+             <div class="precio-col-header">
+             <h3>Oferta de hoy</h3>
+             <del><p>$ 100.000</p></del>
+             <p>$ 70.000</p>
+             </div>
+            
+            <div class="precio-col-features">
+             <p>Todas las redes</p>
+             <p>50 cajas de purina</p>
+             <p>perros 0 -1 año</p>
+             </div>
+            
+            <div class="precio-col-comprar">
+             <a>Publicar</a>
+             </div>
+             </div>
+            
+            </div>
+        </ng-container>
+        <ng-container id="Clientes">
+          <h2 class="mb-4">Clientes</h2>
+          <table>
+            <tr>
+              <th>Nombre</th>
+              <th>Documento</th>
+              <th>Celular</th>
+              <th>Productos</th>
+              <th>Cantidad</th>
+              <th>Metodo de pago</th>
+            </tr>
+            <tr>
+              <td>Alejandro Rojas</td>
+              <td>1001298656</td>
+              <td>3184333650</td>
+              <td>Cepillo Para Peinar</td>
+              <td>100 Unidades</td>
+              <td>Efectivo</td>
+            </tr>
+            <tr>
+              <td>Alejandra De la cruz</td>
+              <td>1001268424</td>
+              <td>3172633766</td>
+              <td>Purina para perro</td>
+              <td>100 Unidades</td>
+              <td>Tarjeta Debito</td>
+            </tr>
+            <tr>
+              <td>Raul Santos</td>
+              <td>1001298656</td>
+              <td>3164668520</td>
+              <td>Comida para gato</td>
+              <td>10 Unidades</td>
+              <td>Efectivo</td>
+            </tr>
+          </table>
+        </ng-container>
+        <ng-container id="Ventas">
+          <h2 class="mb-4">Ventas del ultimo mes</h2>
+          <table>
+            <tr>
+              <th>Producto</th>
+              <th>Código</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Fecha de la venta</th>
+            </tr>
+            <tr>
+              <td>Cepillo Para Peinar</td>
+              <td>10210025100</td>
+              <td>10 Cajas</td>
+              <td>$60.000</td>
+              <td>2021/12/09</td>
+            </tr>
+            <tr>
+              <td>Comida para gato</td>
+              <td>18810025592</td>
+              <td>15 Cajas</td>
+              <td>$90.000</td>
+              <td>2021/11/19</td>
+            </tr>
+            <tr>
+              <td>Purina para perro</td>
+              <td>16219995100</td>
+              <td>30 Cajas</td>
+              <td>$100.000</td>
+              <td>2021/12/09</td>
+            </tr>
+          </table>
+        </ng-container>
+        <ng-container id="DescripcionAlmacen1">
+          <h2 class="mb-4">Almacen 1</h2>
+          <table>
+            <tr>
+              <th>Producto</th>
+              <th>Código</th>
+              <th>Cantidad</th>
+              <th>Fecha De Elaboración</th>
+              <th>Fecha De Vencimiento</th>
+            </tr>
+            <tr>
+              <td>Cepillo Para Peinar</td>
+              <td>10210025100</td>
+              <td>10 Cajas</td>
+              <td>2021/10/01</td>
+              <td>2021/12/01</td>
+            </tr>
+            <tr>
+              <td>Comida para gato</td>
+              <td>18810025592</td>
+              <td>20 Cajas</td>
+              <td>2021/08/01</td>
+              <td>2021/11/01</td>
+            </tr>
+            <tr>
+              <td>Purina para perro</td>
+              <td>16219995100</td>
+              <td>30 Cajas</td>
+              <td>2021/07/01</td>
+              <td>2022/01/11</td>
+            </tr>
+          </table>
+        </ng-container>
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
